@@ -22,7 +22,376 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- main container -->
-    <div class=""></div>
+    <!-- main container====================main container================ -->
+    <div class="">
+      <!-- banner / header=======================header--========= -->
+      <header class="pb-32">
+        <!-- for the header width -->
+        <div class="pt-8 md:pt-0">
+          <!-- nav =========nav====-->
+          <nav
+            class="px-6 md:max-w-6xl md:mx-auto flex flex-row flex-wrap justify-between gap-y-5 md:gap-y-0 md:items-center"
+          >
+            <!-- logo -->
+            <section class="">
+              <img src="./images/logo.svg" alt="" srcset="" />
+            </section>
+            <!-- hamburger -->
+            <section class="md:hidden">
+              <i class="fa-solid fa-bars text-3xl text-grayishViolet"></i>
+            </section>
+            <!-- menu -->
+            <div class="hidden md:contents">
+              <section
+                class="flex flex-col md:flex-row md:flex-nowrap md:w-[80%] md:items-center md:justify-between space-y-4 md:space-y-0 text-center p-8 text-white bg-darkViolet md:bg-opacity-0 font-semibold text-lg md:text-base w-full rounded-2xl md:text-grayishViolet"
+              >
+                <ul
+                  class="flex flex-col md:flex-row md:space-y-0 md:space-x-6 space-y-6 pb-8 md:pb-0 border-b border-grayishViolet md:border-0"
+                >
+                  <li>
+                    <a href="" class="hover:text-sky-200 transition-colors"
+                      >Features</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-sky-200 transition-colors"
+                      >Pricing</a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="hover:text-sky-200 transition-colors"
+                      >Resources</a
+                    >
+                  </li>
+                </ul>
+
+                <ul
+                  class="flex flex-col space-y-6 p-4 md:items-center md:flex-row md:space-y-0 md:space-x-6 md:p-0"
+                >
+                  <li>
+                    <a href="" class="hover:text-sky-200 transition-colors"
+                      >Login</a
+                    >
+                  </li>
+                  <button
+                    class="bg-cyan py-3 px-8 text-white rounded-3xl cursor-pointer hover:bg-sky-400 transition-colors"
+                  >
+                    Sign Up
+                  </button>
+                </ul>
+              </section>
+            </div>
+          </nav>
+
+          <!-- banner -->
+          <div
+            class="mt-8 grid grid-cols-1 overflow-hidden md:overflow-visible md:grid-cols-2 align gap-y-9 pl-6 md:max-w-6xl md:gap-12 mx-auto"
+          >
+            <!-- hero -->
+            <div
+              class="bg-header-mobile md:bg-header-desktop w-full h-96 bg-no-repeat bg-left bg-cover md:order-2"
+            ></div>
+            <!-- banner Text -->
+            <div class="text-center pr-6 md:text-left md:order-1 self-center">
+              <h1
+                class="text-5xl text-veryDarkViolet font-bold leading-tight md:text-6xl md:leading-tight"
+              >
+                More than just shorter links
+              </h1>
+              <p
+                class="text-grayishViolet mt-3 md:mt-4 font-medium leading-normal"
+              >
+                Build your brand’s recognition and get detailed insights on how
+                your links are performing.
+              </p>
+              <button
+                class="bg-cyan py-3 px-8 mt-7 text-white rounded-3xl cursor-pointer hover:bg-sky-400 transition-colors font-semibold"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- end of header -->
+
+      <!-- ========================statistics=================== -->
+      <div class="bg-slate-200 pb-28">
+        <!-- for the width -->
+        <div class="max-w-lg md:max-w-6xl mx-auto px-10">
+          <!-- for the form and the short link -->
+          <div class="relative bottom-16">
+            <!-- for the form -->
+            <div class="bg-darkViolet rounded-xl">
+              <div
+                class="p-6 md:p-10 rounded-xl space-y-4 md:space-y-0 md:space-x-3 bg-boost-mobile md:bg-boost-desktop bg-no-repeat bg-cover bg-center"
+              >
+                <input
+                  type="text"
+                  name="linkInput"
+                  id="linkInput"
+                  placeholder="Shorten a link here.."
+                  class="block w-full py-3 pl-4 md:pl-6 rounded-xl focus:outline-0 md:inline md:w-[70%]"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="bg-cyan py-3 px-8 font-semibold text-white w-full md:w-[25%] rounded-xl cursor-pointer hover:bg-sky-400 transition-colors duration-200"
+                >
+                  Shorten It!
+                </button>
+              </div>
+            </div>
+
+            <!-- for the shortened link -->
+            <!-- <div class="space-y-6 mt-6 font-medium">
+              <section
+                class="p-4 md:py-2 md:px-6 bg-white flex flex-col md:flex-row md:space-y-0 md:justify-between md:items-center space-y-3 rounded-lg"
+              >
+                <p
+                  class="pb-3 md:pb-0 text-veryDarkBlue border-b md:border-0 border-gray md:w-[45%]"
+                >
+                  https://www.frontendmentor.com
+                </p>
+
+                <section
+                  class="space-y-4 py-1 flex-auto md:py-0 md:space-y-0 flex flex-col md:flex-row md:w-[55%] md:gap-x-8 md:items-center md:justify-end"
+                >
+                  <p class="text-cyan">https://relink/gaojtiuo</p>
+                  <button
+                    type="submit"
+                    class="bg-cyan py-3 px-8 font-semibold text-white w-full md:w-[25%] rounded-xl cursor-pointer hover:bg-sky-400 transition-colors duration-200"
+                  >
+                    Copy
+                  </button>
+                </section>
+              </section>
+            </div> -->
+          </div>
+          <!-- end of form section -->
+
+          <!-- for the statistic section -->
+          <div class="mt-20">
+            <!-- the header of the section-->
+            <div class="space-y-4 text-center md:max-w-lg md:mx-auto">
+              <h2 class="text-2xl md:text-3xl font-bold text-darkViolet">
+                Advanced Statistics
+              </h2>
+              <p class="text-grayishViolet font-medium leading-[1.6]">
+                Track how your links are performing across the web with our
+                advanced statistics dashboard.
+              </p>
+            </div>
+
+            <!-- for the features -->
+            <div
+              class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-10 lg:h-96"
+            >
+              <!-- brand recognition -->
+              <div
+                class="text-center bg-white rounded-lg flex flex-col items-center md:items-start md:text-left lg:self-start p-6 pb-8"
+              >
+                <!-- logo -->
+                <img
+                  src="images/icon-brand-recognition.svg"
+                  alt=""
+                  class="p-4 bg-darkViolet rounded-full overflow-visible margin-auto relative bottom-14"
+                />
+                <!-- details -->
+                <section class="space-y-3 mt-[-20px]">
+                  <h3 class="text-xl font-bold text-darkViolet">
+                    Brand Recognition
+                  </h3>
+                  <p class="text-grayishViolet leading-[1.6] font-medium">
+                    Boost your brand recognition with each click. Generic links
+                    don’t mean a thing. Branded links help instil confidence in
+                    your content.
+                  </p>
+                </section>
+              </div>
+
+              <!-- detailed records -->
+              <div
+                class="text-center bg-white rounded-lg flex flex-col items-center md:items-start md:text-left lg:self-center p-6 pb-8"
+              >
+                <!-- logo -->
+                <img
+                  src="images/icon-detailed-records.svg"
+                  alt=""
+                  class="p-4 bg-darkViolet rounded-full overflow-visible margin-auto relative bottom-14"
+                />
+                <!-- details -->
+                <section class="space-y-3 mt-[-20px]">
+                  <h3 class="text-xl font-bold text-darkViolet">
+                    Detailed Records
+                  </h3>
+                  <p class="text-grayishViolet leading-[1.6] font-medium">
+                    Gain insights into who is clicking your links. Knowing when
+                    and where people engage with your content helps inform
+                    better decisions.
+                  </p>
+                </section>
+              </div>
+
+              <!-- fully customizable -->
+              <div
+                class="text-center bg-white rounded-lg flex flex-col items-center md:items-start md:text-left lg:self-end pb-8 p-6"
+              >
+                <!-- logo -->
+                <img
+                  src="images/icon-fully-customizable.svg"
+                  alt=""
+                  class="p-4 bg-darkViolet rounded-full overflow-visible margin-auto relative bottom-14"
+                />
+                <!-- details -->
+                <section class="space-y-3 mt-[-20px]">
+                  <h3 class="text-xl font-bold text-darkViolet">
+                    Fully Customizable
+                  </h3>
+                  <p class="text-grayishViolet leading-[1.6] font-medium">
+                    Improve brand awareness and content discoverability through
+                    customizable links, supercharging audience engagement.
+                  </p>
+                </section>
+              </div>
+            </div>
+          </div>
+          <!-- end of statistics section -->
+        </div>
+      </div>
+
+      <!-- =================boost section==================== -->
+      <div class="bg-darkViolet">
+        <div
+          class="bg-boost-mobile bg-no-repeat bg-center bg-cover space-y-6 md:space-y-6 text-center py-24 md:bg-boost-desktop md:py-12"
+        >
+          <h2 class="text-white text-3xl font-bold">Boost your links today</h2>
+          <button
+            class="bg-cyan py-3 px-8 text-white font-semibold rounded-3xl cursor-pointer hover:bg-sky-400 transition-colors duration-200"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+
+      <!-- ====================footer========================= -->
+      <footer class="bg-veryDarkViolet">
+        <div
+          class="md:max-w-6xl md:px-4 md:mx-auto grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-14 justify-items-center text-center py-12 md:py-14 md:text-left"
+        >
+          <!-- logo -->
+          <section>
+            <img src="./images/logo2.svg" alt="" class="" />
+          </section>
+
+          <!-- links -->
+          <div class="space-y-5">
+            <p class="font-semibold text-white">Features</p>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Link Shortening</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Branded Links</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Analytics</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- second link -->
+          <div class="space-y-5">
+            <p class="font-semibold text-white">Resources</p>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Developers</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- third link -->
+          <div class="space-y-5">
+            <p class="font-semibold text-white">Company</p>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="text-grayishViolet hover:text-cyan transition-colors duration-200 font-medium"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--social media link  -->
+          <section class="space-x-3 md:justify-self-start text-center">
+            <i
+              class="fa-brands fa-square-facebook cursor-pointer text-xl text-white hover:text-cyan transition-colors duration-200"
+            ></i>
+            <i
+              class="fa-brands fa-twitter cursor-pointer text-xl text-white hover:text-cyan transition-colors duration-200"
+            ></i>
+            <i
+              class="fa-brands fa-pinterest cursor-pointer text-xl text-white hover:text-cyan transition-colors duration-200"
+            ></i>
+            <i
+              class="fa-brands fa-instagram cursor-pointer text-xl text-white hover:text-cyan transition-colors duration-200"
+            ></i>
+          </section>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
