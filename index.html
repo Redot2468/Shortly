@@ -25,7 +25,7 @@
     <!-- main container====================main container================ -->
     <div class="">
       <!-- banner / header=======================header--========= -->
-      <header class="pb-32">
+      <header class="pb-32 relative">
         <!-- for the header width -->
         <div class="pt-8 md:pt-0">
           <!-- nav =========nav====-->
@@ -37,11 +37,18 @@
               <img src="./images/logo.svg" alt="" srcset="" />
             </section>
             <!-- hamburger -->
-            <section class="md:hidden">
-              <i class="fa-solid fa-bars text-3xl text-grayishViolet"></i>
+            <section class="menu__signs md:hidden">
+              <i
+                class="fa-solid fa-bars text-3xl text-grayishViolet animate-displayham"
+              ></i>
+              <i
+                class="fa-solid hidden fa-xmark text-3xl text-grayishViolet animate-displayham"
+              ></i>
             </section>
             <!-- menu -->
-            <div class="hidden md:contents">
+            <div
+              class="menu__mobile animate-display absolute top-20 right-[2%] left-[4%] hidden md:contents w-[93%]"
+            >
               <section
                 class="flex flex-col md:flex-row md:flex-nowrap md:w-[80%] md:items-center md:justify-between space-y-4 md:space-y-0 text-center p-8 text-white bg-darkViolet md:bg-opacity-0 font-semibold text-lg md:text-base w-full rounded-2xl md:text-grayishViolet"
               >
@@ -120,7 +127,7 @@
         <!-- for the width -->
         <div class="max-w-lg md:max-w-6xl mx-auto px-10">
           <!-- for the form and the short link -->
-          <div class="relative bottom-16">
+          <div class="form relative bottom-16">
             <!-- for the form -->
             <div class="bg-darkViolet rounded-xl">
               <div
@@ -131,42 +138,19 @@
                   name="linkInput"
                   id="linkInput"
                   placeholder="Shorten a link here.."
-                  class="block w-full py-3 pl-4 md:pl-6 rounded-xl focus:outline-0 md:inline md:w-[70%]"
+                  class="input__field block w-full py-3 px-5 md:px-6 rounded-xl focus:outline-0 md:inline md:w-[70%]"
                   required
                 />
                 <button
                   type="submit"
-                  class="bg-cyan py-3 px-8 font-semibold text-white w-full md:w-[25%] rounded-xl cursor-pointer hover:bg-sky-400 transition-colors duration-200"
+                  class="shorten__btn bg-cyan py-3 px-8 font-semibold text-white w-full md:w-[25%] rounded-xl cursor-pointer hover:bg-sky-400 transition-colors duration-200"
                 >
                   Shorten It!
                 </button>
               </div>
             </div>
 
-            <!-- for the shortened link -->
-            <!-- <div class="space-y-6 mt-6 font-medium">
-              <section
-                class="p-4 md:py-2 md:px-6 bg-white flex flex-col md:flex-row md:space-y-0 md:justify-between md:items-center space-y-3 rounded-lg"
-              >
-                <p
-                  class="pb-3 md:pb-0 text-veryDarkBlue border-b md:border-0 border-gray md:w-[45%]"
-                >
-                  https://www.frontendmentor.com
-                </p>
-
-                <section
-                  class="space-y-4 py-1 flex-auto md:py-0 md:space-y-0 flex flex-col md:flex-row md:w-[55%] md:gap-x-8 md:items-center md:justify-end"
-                >
-                  <p class="text-cyan">https://relink/gaojtiuo</p>
-                  <button
-                    type="submit"
-                    class="bg-cyan py-3 px-8 font-semibold text-white w-full md:w-[25%] rounded-xl cursor-pointer hover:bg-sky-400 transition-colors duration-200"
-                  >
-                    Copy
-                  </button>
-                </section>
-              </section>
-            </div> -->
+            <div class="shorten__links-container" data-copy="copy"></div>
           </div>
           <!-- end of form section -->
 
@@ -393,5 +377,8 @@
         </div>
       </footer>
     </div>
+
+    <!-- script -->
+    <script src="./script.js"></script>
   </body>
 </html>

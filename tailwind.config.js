@@ -22,7 +22,25 @@ module.exports = {
          "boost-desktop": "url(../images/bg-boost-desktop.svg)",
          "shorten-mobile": "url(../images/bg-shorten-mobile.svg)",
          "shorten-desktop": "url(../images/bg-shorten-desktop.svg)"
-      }
+      },
+      keyframes: {
+        displaymenu: {
+          '0%':{opacity:"0"},
+          '50%': {opacity:"0.5"},
+          '100%': {opacity:"1"}
+        },
+        displayham: {
+          '0%':{opacity:"0"},
+          '50%': {opacity:"0.5"},
+          '100%': {opacity:"1"}
+        }
+
+      },
+      animation: {
+        display: "displaymenu 1s ease-out",
+        displayham: "displaymenu 1s ease-out"
+      },
+
       
     },
   },
